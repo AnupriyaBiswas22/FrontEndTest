@@ -6,7 +6,6 @@
 
 body{
     overflow-x: hidden;
-    background-image: url("bg.jpg");
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,15 +15,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    
+    background-color: rgba(245, 245, 220, 0.6);
 }
 
 nav{
     height: fit-content;
     width: 100%;
-    background-color: rgba(68, 19, 231, 0.098);
+    background-color: rgba(238, 64, 11, 0.8);
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 nav .logo img{
-    object-fit: scale-down;
     padding: 0 2rem;
 }
 nav{
@@ -41,36 +45,61 @@ nav div{
     align-content: center;
 }
 .navlinks{
-    width: 35%;
+    width: 50%;
 
     display: flex;
     flex-direction: row;
     align-content: center;
 
-    color: whitesmoke;
     text-align: center;
 }
-.navlinks div{
-    width: 25%;
+.navlinks .navbtn{
+    width: 15%;
 
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    border: 0.25px solid white;
-    border-radius: 2px;
+    border-left: 0.25px solid white;
+}
+.navlinks .navbtn:hover{
+    background-color: rgba(134, 36, 6, 0.879);
+}
+
+
+.navlinks .register{
+    width: 40%;
+}
+.navlinks .register div{
+    width: 50%;
+    height: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    color: rgb(28, 5, 3);
+
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0.25px solid rgb(28, 5, 3);
+    border-radius: 20px;
 
     margin: 0 5px;
+}
+.navlinks .register div:hover{
+    background-color: rgba(38, 10, 2, 0.879);
+    color: whitesmoke;
 }
 
 .maincontent{
     height: 30rem;
-    width: 70%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.232), rgba(213, 189, 189, 0.186), rgba(68, 19, 231, 0.167));
+    width: 70rem;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.232), rgba(240, 132, 16, 0.452));
 
     border: 3px solid white;
     border-radius: 2rem;
@@ -95,7 +124,7 @@ nav div{
     flex-direction: row;
 }
 .maincontent .sectionhead h1{
-    color:rgba(222, 206, 255, 0.862);
+    color:rgb(240, 132, 16);
     font-size: 6rem;
     font-weight: 800;
     
@@ -106,7 +135,7 @@ nav div{
     align-content: center;
 }
 .maincontent .sectionhead .tag{
-    color:white;
+    color:rgb(240, 132, 16);
 }
 
 .maincontent .intro{
@@ -123,30 +152,35 @@ nav div{
     margin: 2rem 0;
     padding: 0.75rem 0;
 
-    color:rgba(68, 19, 231);
+    color:rgb(240, 132, 16);
     font-size: large;
     font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.maincontent .freebtn:hover{
+    background-color: rgb(240, 132, 16);
+    color:white;
+}
+#about{
+    flex-direction: column;
+}
 #about .aboutsection{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: baseline;
     justify-content: center;
 
     padding: 1rem 0;
 }
 .maincontent .aboutsection .abouthead{
-    color:rgba(222, 206, 255);
+    color:rgb(240, 132, 16);
     font-size: 2rem;
     text-align: left;
 
     width: 30%;
 }
 .maincontent p{
-    color:rgba(222, 206, 255);
-    font-size: 1rem;
+    color:black;
+    font-size: 1.3rem;
     text-align: left;
 
     width: 65%;
@@ -156,7 +190,7 @@ nav div{
     height: max-content;
 }
 .maincontent .tryhead{
-    color:rgba(222, 206, 255);
+    color:rgb(240, 132, 16);
     font-size: 4rem;
     text-align: center;
 
@@ -174,20 +208,26 @@ nav div{
     padding: 0.5rem;
     border: white 1px solid;
 
-    background-color: rgba(95, 158, 160, 0.429);
+    background-color: rgba(238, 64, 11, 0.633);
 
     color:white;
     font-size: 1rem;
+}
+.maincontent #element:hover{
+    background-color: rgba(238, 64, 11, 1);
 }
 .maincontent #gobutton{
     padding: 0.5rem;
 
     background-color: white;
 
-    color:rgba(95, 158, 160, 1);
+    color:rgba(238, 64, 11, 0.633);
     font-size: 1rem;
 }
-
+.maincontent #gobutton:hover{
+    background-color: rgba(238, 64, 11, 1);
+    color: whitesmoke;
+}
 .maincontent .maintable{
     height: 2rem;
     width: 100%;
@@ -195,7 +235,7 @@ nav div{
     margin: 2rem 0;
     border: papayawhip 1px solid;
 
-    color:rgba(222, 206, 255);
+    color:rgba(238, 64, 11, 0.633);
 }
 
 .maincontent .maintable th{
@@ -210,5 +250,47 @@ nav div{
     font-size: 1rem;
     padding: 1rem;
 
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#contact{
+    align-content: center;
+}
+.maincontent .icons{
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+.maincontent .icons img:hover{
+    border-radius: 100px;
+    background-color: rgba(229, 19, 19, 0.44);
+}
+.maincontent .email{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.email p{
+    color:rgba(238, 64, 11, 0.633);
+}
+.email .emailbox{
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.123);
+    border:rgb(28, 5, 3) 0.2px solid;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 800px){
+    nav{
+        width: 100% !important;
+    }
+    #about{
+        font-size: small;
+        flex-direction: row;
+    }
 }

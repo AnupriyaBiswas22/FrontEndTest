@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=1440, height=6328,  initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo"><img src="logo.jpg"/></div>
+            <div class="navlinks">
+                <div><a href="#home">Home</a></div>
+                <div><a href="#about">About Us</a></div>
+                <div><a href="#tryit">Try It</a></div>
+                <div><a href="#contact">Contact Us</a></div>
+            </div>
+        </nav>
+        <div class="maincontent" id="home">
+            <div class="sectionhead">
+                <h1 class="tag"><b>#</b></h1>
+                <h1 class="brandname">Taggit</h1>
+            </div>
+
+            <div class="intro">Wanna get that Blue-tick you always wanted on Instagram? Don't worry, we got you. With Taggit your profile reach increases upto 40%. Try it Now & Don't forget to Tag Us! </div>
+
+            <div class="freebtn">Free Trial</div>
+
+        </div>
+
+        <div class="maincontent" id="about">
+            <div class="aboutsection">
+                <div class="abouthead">Mission</div>
+                <p>
+                    Marketing charges for small businesses are the kind of Overhead that can eat away at the profits pretty quickly. Thanks to the advancing influence of Social Media in our day-to-day, this can be easily done at a considerably low cost.
+                    We Aim to make maintaining Social Media accounts and conducting Social Media marketing easy and Hassle-free. We suggest relevant and trendy Hashtags based on the niche of the Post and the overall Brand so that it reaches the maximum target it can.
+                </p>
+            </div>
+            <div class="aboutsection">
+                <div class="abouthead">About Us</div>
+                <p>
+                    Taggit is a handy tool with a minimalistic UI to simplify Social Media for the Non-Tech-Savvies.
+                </p>
+            </div>
+            <div class="aboutsection">
+                <div class="abouthead">Current Customers</div>
+                <p>
+                    Taggit is a handy tool with a minimalistic UI to simplify Social Media for the Non-Tech-Savvies.
+                </p>
+            </div>
+        </div>
+
+        <div class="maincontent" id="tryit">
+            <h1 class="tryhead"># Try it</h1>
+            <form method="POST" name="mainform">
+                <div class="search">
+                    Enter Post Topic
+                </div>
+                
+                <input type="text" name="term" id="element"/>
+
+                <input type="button" name="go" value="GO!" id="gobutton" onclick="getTags();"/>
+                
+                <table id="tags" class="maintable">
+                    <thead>
+                        <th>Hashtags</th>
+                        <th>Posts</th>
+                        <th>Search Volume</th>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+                
+            </form>
+        </div>
+
+        <div class="maincontent" id="contact">
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

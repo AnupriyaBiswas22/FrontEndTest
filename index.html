@@ -8,10 +8,14 @@
     <body>
         <nav>
             <div class="logo"><img src="images/logo01.jpg"/></div>
+
             <div class="navlinks">
                 <div class="navbtn"><a href="#home">Home</a></div>
-                <div class="navbtn"><a href="#about">About Us</a></div>
+                
                 <div class="navbtn"><a href="#tryit">Try It</a></div>
+
+                <div class="navbtn"><a href="#about">About Us</a></div>
+
                 <div class="navbtn"><a href="#contact">Contact Us</a></div>
 
                 
@@ -21,76 +25,107 @@
                 </div>
             </div>
         </nav>
-        <div class="maincontent" id="home"><h1 class="tryhead"># Taggit</h1>
 
-            <div class="intro">Wanna get that Blue-tick you always wanted on Instagram? Don't worry, we got you. With Taggit your profile reach increases upto 40%. Try it Now & Don't forget to Tag Us! 
-                <br>
-            
+        <div class="maincontent" id="home">
+            <div class="imgsection">
+                <img src="images/Woman.png" alt="Woman-illustration" />
             </div>
 
-            <div class="freebtn">Free Trial</div>
-
-        </div>
-
-        <div class="maincontent" id="about">
-            <div class="aboutsection">
-                <div class="abouthead">Mission</div>
-                <p>
-                    Marketing charges for small businesses are the kind of Overhead that can eat away at the profits pretty quickly. Thanks to the advancing influence of Social Media in our day-to-day, this can be easily done at a considerably low cost.
-                    We Aim to make maintaining Social Media accounts and conducting Social Media marketing easy and Hassle-free. We suggest relevant and trendy Hashtags based on the niche of the Post and the overall Brand so that it reaches the maximum target it can.
-                </p>
-            </div>
-            <div class="aboutsection">
-                <div class="abouthead">About Us</div>
-                <p>
-                    Taggit is a handy tool with a minimalistic UI to simplify Social Media for the Non-Tech-Savvies.
-                </p>
-            </div>
-            <div class="aboutsection">
-                <div class="abouthead">Current Customers</div>
-                <p>
-                    Taggit is a handy tool with a minimalistic UI to simplify Social Media for the Non-Tech-Savvies.
-                </p>
+            <div class="contentsection">
+                <h1 class="sectionhead"># Taggit</h1>
+                <div class="intro">Wanna get that Blue-tick you always wanted on Instagram? Don't worry, we got you. With Taggit your profile reach increases upto 40%. Try it Now & Don't forget to Tag Us! 
+                    <br>
+                </div>
+                <div class="freebtn"><a href="#tryit">Free Trial</a></div>
             </div>
         </div>
 
         <div class="maincontent" id="tryit">
-            <h1 class="tryhead"># Try it</h1>
-            <form method="POST" name="mainform">
-                <div class="search">
-                    Enter Post Topic
-                </div>
-                
-                <input type="text" name="term" id="element"/>
+            <div class="contentsection">
+                <h1 class="sectionhead"># Try it</h1>
 
-                <input type="button" name="go" value="GO!" id="gobutton" onclick="getTags();"/>
+                <form method="POST" name="mainform">
+                    <div class="searchlabel">
+                        Enter Post Topic
+                    </div>
                 
-                <table id="tags" class="maintable">
-                    <thead>
-                        <th>Hashtags</th>
-                        <th>Posts</th>
-                        <th>Search Volume</th>
-                    </thead>
+                    <input type="text" name="term" id="searchtext"/>
 
-                    <tbody></tbody>
-                </table>
+                    <input type="button" name="go" value="GO!" id="gobutton" onclick="getTags();"/>
                 
-            </form>
-        </div>
+                    <table id="tags" class="maintable">
+                        <thead>
+                            <th>Hashtags</th>
+                            <th>Posts</th>
+                            <th>Search Volume</th>
+                        </thead>
 
-        <div class="maincontent" id="contact">
-            <h1 class="tryhead"># Contact Us</h1>
-            <div class="icons">
-                <img src="images/social01.png"/>
-                <img src="images/social02.png"/>
-                <img src="images/social03.png"/>
+                        <tbody></tbody>
+                    </table>
+                
+                </form>
             </div>
-            <div class="email">
-                <p>You can also e-mail us here:</p>
-                <div class="emailbox"></div>
+            <div class="imgsection">
+                <img src="images/gurl.png" alt="Cool Gurl Illustration"/>
             </div>
             
         </div>
+
+        <div class="maincontent" id="about">
+            <div class="imgsection">
+                <img src="images/aunty.png" alt="Wise Aunty Illustration"/>
+            </div>
+
+            <div class="contentsection">
+                <h1 class="sectionhead"># About Us</h1>
+                <div class="aboutsection">
+                    <div class="abouthead">Mission</div>
+                    <p>
+                        Marketing charges for small businesses are the kind of Overhead that can eat away at the profits pretty quickly. Thanks to the advancing influence of Social Media in our day-to-day, this can be easily done at a considerably low cost.
+                        We Aim to make maintaining Social Media accounts and conducting Social Media marketing easy and Hassle-free. We suggest relevant and trendy Hashtags based on the niche of the Post and the overall Brand so that it reaches the maximum target it can.
+                    </p>
+                </div>
+                <div class="aboutsection">
+                    <div class="abouthead">About Us</div>
+                    <p>
+                        Taggit is a handy tool with a minimalistic UI to simplify Social Media for the Non-Tech-Savvies.
+                    </p>
+                </div>
+                <div class="aboutsection">
+                    <div class="abouthead">Current Customers</div>
+                    <p>
+                        Taggit is a handy tool with a minimalistic UI to simplify Social Media for the Non-Tech-Savvies.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="maincontent" id="contact">
+            <div class="contentsection">
+                <h1 class="sectionhead"># Contact Us</h1>
+
+                
+                <div class="icons">
+                    <img src="images/social01.png"/>
+                    <img src="images/social02.png"/>
+                    <img src="images/social03.png"/>
+                </div>
+                <div class="email">
+                    <p>You can also e-mail us here:</p>
+                    <div class="emailbox"></div>
+                </div>
+            </div>
+
+            <div class="imgsection">
+                <img src="images/hearts.png" alt="Heart-Eyes Illustration" />
+            </div>
+
+        </div>
+
+        <footer>
+            Copyright &copy;AnupriyaBiswas(Wisdmlabs)
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>

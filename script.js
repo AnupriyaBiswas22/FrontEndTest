@@ -18,9 +18,13 @@ const myStore = {
     hashtags: ["movies", "moviestar", "movietrack", "cinema", "blockbuster", "100croreclub", "superstar", "titanic", "movieSets", "movieScripts", "MovieNight", "Netflix&Chill", "Popcorn", "movieMarathon", "movieFinsta", "MoviesDay", "movies4mentalhealth", "marvel", "DCU", "UniversalPictures", "Disney", "DisneyPictures", "movieStarlet", "movieSet"],
     posts: [983456, 987654,45678,76549,45678, 3456,66789,45678,87689,87655,456789,87654,56789,45678,86456,45678,87654,654567,87659,8765,5678,87659,45678,87654],
     vol: [987654, 876556, 567899, 876543,345678, 987654, 45678, 765876, 68765, 456789, 34567, 567896, 987654, 876556, 567899, 876543,345678, 987654, 45678, 765876, 68765, 456789, 34567, 567896]
+  },
+  music:{
+    hashtags: ["musichead","musicforlife","powerofmusic","musicnation","taylorswift","concerthead","tseries","popislife","metalhead","gothrocks","billboards","instagrammy","lofi","reelmusic","spotifyandchill","shreyaghoshal","arijitsingh","sonunigam","mileycyrus","theweekend","beyonce","onedirection","harrystyles","oliviarodrigo","latamangeshkar"],
+    posts:[7023490,8765456,456789,345678,7023490,8765456,456789,345678,7023490,8765456,456789,345678,7023490,8765456,456789,345678,7023490,8765456,456789,345678,7023490,8765456,456789,345678,45688],
+    vol:[8765345,45678,456789,456865,,8765345,45678,456789,456865,8765345,45678,456789,456865,8765345,45678,456789,456865,8765345,45678,456789,456865,8765345,45678,456789,456865,345678]
   }
 }
-
 
 
 
@@ -41,6 +45,7 @@ const myStore = {
 function getTags(){
   var myData = document.mainform.term.value;
   let myArray = myStore[myData];
+
 
   for(let i=0; i<myArray['hashtags'].length; i++)
   {

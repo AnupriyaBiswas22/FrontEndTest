@@ -3,7 +3,6 @@
     border: 0;
     padding: 0;
 }
-
 body{
     overflow-x: hidden;
     
@@ -15,30 +14,30 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    
-    background-color: rgba(245, 245, 220, 0.6);
 }
 
+/*Start of Navigation Bar*/
 nav{
     height: fit-content;
     width: 100%;
-    background-color: rgba(238, 64, 11, 0.8);
-}
-a{
-    color: whitesmoke;
-    text-decoration: none;
-}
-nav .logo img{
-    padding: 0 2rem;
-}
-nav{
+    background-color: rgba(0, 0, 0, 0.3);
+
     display: inline-flex;
     flex-wrap: wrap;
 
     justify-content: space-between;
 
     top: 0;
-    position: sticky;
+    position: fixed;
+}
+
+nav .logo img{
+    padding: 0 2rem;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 nav div{
     display: flex;
@@ -66,9 +65,8 @@ nav div{
     border-left: 0.25px solid white;
 }
 .navlinks .navbtn:hover{
-    background-color: rgba(134, 36, 6, 0.879);
+    background-color: black;
 }
-
 
 .navlinks .register{
     width: 40%;
@@ -82,150 +80,147 @@ nav div{
     align-content: center;
     justify-content: center;
 
-    color: rgb(28, 5, 3);
-
     font-weight: 400;
     font-size: 1rem;
-    border: 0.25px solid rgb(28, 5, 3);
+    border: 0.25px solid black;
     border-radius: 20px;
 
     margin: 0 5px;
 }
 .navlinks .register div:hover{
-    background-color: rgba(38, 10, 2, 0.879);
+    background-color: rgba(0, 0, 0, 0.879);
     color: whitesmoke;
 }
+/*End of Navigation Bar*/
 
+
+
+/* Start of Common*/
 .maincontent{
-    height: 30rem;
-    width: 70rem;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.232), rgba(240, 132, 16, 0.452));
+    background-image: linear-gradient(to right, rgba(0, 119, 255, 0.399), rgba(0, 255, 213, 0.29), rgba(115, 255, 0, 0.207));
 
-    border: 3px solid white;
-    border-radius: 2rem;
-    margin: 5rem auto;
+    color:rgba(24, 6, 0, 0.879);
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-#home div{
-    width: 70%;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.maincontent .sectionhead{
     flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+
+    padding-bottom: 2rem;
 }
-.maincontent .sectionhead h1{
-    color:rgb(240, 132, 16);
-    font-size: 6rem;
-    font-weight: 800;
-    
-    padding: 0 1rem 2rem 1rem;
+.contentsection{
+    width: 60%;
 
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-}
-.maincontent .sectionhead .tag{
-    color:rgb(240, 132, 16);
-}
-
-.maincontent .intro{
-    color:azure;
-    font-size: 2rem;
-    font-weight: 400;
-
-    text-align: justify;
-}
-.maincontent .freebtn{
-    border-radius: 15px;
-    background-color: white;
-
-    margin: 2rem 0;
-    padding: 0.75rem 0;
-
-    color:rgb(240, 132, 16);
-    font-size: large;
-    font-weight: 400;
-}
-.maincontent .freebtn:hover{
-    background-color: rgb(240, 132, 16);
-    color:white;
-}
-#about{
+    justify-content: center;
     flex-direction: column;
 }
-#about .aboutsection{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: baseline;
-    justify-content: center;
-
-    padding: 1rem 0;
-}
-.maincontent .aboutsection .abouthead{
-    color:rgb(240, 132, 16);
-    font-size: 2rem;
-    text-align: left;
-
+.imgsection{
     width: 30%;
 }
-.maincontent p{
+.maincontent img{
+    object-fit: scale-down;
+    padding-top: 3rem;
+}
+.maincontent .sectionhead{
     color:black;
-    font-size: 1.3rem;
-    text-align: left;
-
-    width: 65%;
-}
-
-#tryit{
-    height: max-content;
-}
-.maincontent .tryhead{
-    color:rgb(240, 132, 16);
     font-size: 4rem;
     text-align: center;
 
     margin: 2rem 0;
+
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-.maincontent .search{
+/* End of Common*/
+
+
+
+
+/* Start Of Home*/
+.maincontent .contentsection .intro{
+    color:black;
+    font-size: 2rem;
+    font-weight: 400;
+
+    text-align: justify;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.maincontent .freebtn{
+    width: 100%;
+
+    border-radius: 15px;
+    margin: 2rem 0;
+
+    background-color: white;
+
+    text-align: center;
+
+    color: rgba(68, 0, 255, 0.991);
+}
+.maincontent .freebtn:hover{
+    box-shadow: 7px 7px 35px rgba(66, 66, 66, 0.584);
+
+    background-color: rgba(54, 0, 147, 0.578);
+    color:white;
+    padding: 0.25rem 0;
+}
+.freebtn a{
+    text-decoration: none;
+    color:black;
+    
+    font-size: 2rem;
+    font-weight: 800;
+}
+/* End Of Home*/
+
+
+/* Start Of Tryit*/
+.maincontent .searchlabel{
     width: 100%;
     font-size: 2rem;
-    color:white;
+
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-.maincontent #element{
+.maincontent #searchtext{
     width: 25rem;
     height: 1rem;
 
     padding: 0.5rem;
-    border: white 1px solid;
 
-    background-color: rgba(238, 64, 11, 0.633);
+    background-color: rgba(74, 74, 74, 0.633);
 
     color:white;
     font-size: 1rem;
 }
-.maincontent #element:hover{
-    background-color: rgba(238, 64, 11, 1);
+.maincontent #searchtext:hover{
+    background-color: rgba(54, 0, 147, 0.578);
 }
 .maincontent #gobutton{
     padding: 0.5rem;
 
     background-color: white;
+    border-radius: 5px;
 
-    color:rgba(238, 64, 11, 0.633);
     font-size: 1rem;
 }
 .maincontent #gobutton:hover{
-    background-color: rgba(238, 64, 11, 1);
+    background-color: black;
     color: whitesmoke;
 }
 .maincontent .maintable{
@@ -234,10 +229,7 @@ nav div{
 
     margin: 2rem 0;
     border: papayawhip 1px solid;
-
-    color:rgba(238, 64, 11, 0.633);
 }
-
 .maincontent .maintable th{
     font-size: 1rem;
     padding: 1rem;
@@ -253,10 +245,47 @@ nav div{
     font-size: 1.5rem;
     font-weight: 400;
 }
+/* End Of Tryit*/
 
-#contact{
-    align-content: center;
+
+/*Start of About*/
+#about .contentsection{
+    justify-content: space-evenly;
 }
+#about .aboutsection{
+    width: 80%;
+    padding-bottom: 2rem;
+}
+.maincontent .aboutsection .abouthead{
+    color:black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.maincontent p{
+    color:rgb(48, 48, 48);
+    font-size: 1.3rem;
+    text-align: justify;
+
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*End of About*/
+
+
+
+
+
+/*Start of Contact*/
 .maincontent .icons{
     width: 50%;
 
@@ -266,21 +295,41 @@ nav div{
 }
 .maincontent .icons img:hover{
     border-radius: 100px;
-    background-color: rgba(229, 19, 19, 0.44);
+    background-color: rgba(54, 0, 147, 0.578);
 }
 .maincontent .email{
     width: 50%;
     display: flex;
-    flex-direction: row;
-}
-.email p{
-    color:rgba(238, 64, 11, 0.633);
+    flex-direction: column;
 }
 .email .emailbox{
-    width: 85%;
+    height: 2rem;
+
     background-color: rgba(0, 0, 0, 0.123);
     border:rgb(28, 5, 3) 0.2px solid;
     border-radius: 10px;
+}
+.email .emailbox:hover{
+    background-color: rgba(54, 0, 147, 0.578);
+}
+/*End of Contact*/
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 3rem;
+
+    font-size: medium;
+    background-color: black;
+    color:aliceblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -293,4 +342,10 @@ nav div{
         font-size: small;
         flex-direction: row;
     }
+}
+
+@keyframes changecolor{
+    0% {color: rgb(52, 0, 0)}
+    50% {color:rgb(0, 54, 109)}
+    100% {color: rgb(56, 0, 147)}
 }
